@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Greeting App</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaslw7aX5CNckbrcRhCKmN5b-ededWEpCN6ic3Or2spKob_UFEeBt4Q_VG-dAx-zL2gAk&s"
+        alt=""
+      />
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <div>
+        <h4>{{ greeting }}</h4>
+      </div>
+    </div>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 2em;
+        padding-block: 1rem;
+      }
+      .navbar img {
+        border-radius: 50%;
+      }
+      .navbar ul {
+        list-style-type: none;
+      }
+      .navbar ul li {
+        display: inline-flex;
+        padding-inline: 20px;
+        cursor: pointer;
+      }
+      .navbar ul li a {
+        color: black;
+        text-decoration: none;
+      }
+      .navbar h4 {
+        color: blue;
+        text-transform: uppercase;
+      }
+    </style>
+  </body>
+</html>
